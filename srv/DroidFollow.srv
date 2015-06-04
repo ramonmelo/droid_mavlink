@@ -1,0 +1,4 @@
+uint32 DEFAULT_DISTANCE = 2
+uint16 id
+uint32 distance
+---

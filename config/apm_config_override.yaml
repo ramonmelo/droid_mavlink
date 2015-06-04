@@ -1,0 +1,6 @@
+distance_sensor: 0
+
+    # id: 0
+    # frame_id: "fcu"
+    # orientation: -1
+    # covariance: 0

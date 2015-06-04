@@ -1,0 +1,19 @@
+<launch>
+
+    <arg name="prefix" value="robot"/>
+    <arg name="port" default="0"/>
+    <arg name="id" default="0"/>
+    <arg name="comm" default="udp://127.0.0.1:$(arg port)@"/>
+
+    <group ns="$(arg prefix)_$(arg id)">
+        <include file="$(find droid_controller)/launch/apm_daemon.launch">
+            <arg name="fcu_url" value="$(arg comm)" />
+        </include>
+
+        <node pkg="droid_controller" type="droid_node.py" name="$(anon droid)" output="screen">
+            <param name="id" value="$(arg id)"/>
+            <param name="prefix" value="$(arg prefix)"/>
+        </node>
+    </group>
+
+</launch>

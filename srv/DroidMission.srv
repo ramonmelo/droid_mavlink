@@ -1,0 +1,3 @@
+mavros/Waypoint[] waypoints
+---
+bool success

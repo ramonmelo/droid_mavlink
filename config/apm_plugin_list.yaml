@@ -1,0 +1,34 @@
+plugin_blacklist:
+## common
+- actuator_control
+- ftp
+- local_position
+- safety_area
+- setpoint_attitude
+- setpoint_accel
+- setpoint_attitude
+- setpoint_velocity
+- setpoint_position
+## extras
+- image_pub
+- 'mocap_*'
+- px4flow
+- 'vision_*'
+- visualization
+- distance_sensor
+
+plugin_whitelist:
+# Main
+- sys_status
+# Other
+- command
+- global_position
+# - local_position
+- gps
+- imu_pub
+- param
+- rc_io
+- sys_time
+- vfr_hud
+- waypoint
+
